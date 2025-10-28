@@ -3,15 +3,15 @@
 ### Screenshots
 
 > **Lock Screen**
-![Dark Mode](public/lockscreen.jpg)
-![Dark Mode](public/lockscreen-01.jpg)
+![Lock Screen](public/lockscreen.jpg)
+![Lock Screen](public/lockscreen-01.jpg)
 
 > **Homescreen**
-![Dark Mode](public/homescreen.jpg)
+![Homescreen](public/homescreen.jpg)
 
 > **Omarchy Menu**
-![Dark Mode](public/menu.jpg)
+![Omarchy Menu](public/menu.jpg)
 
 > **System Menu**
-![Dark Mode](public/system.jpg)
+![System Menu](public/system.jpg)
 
