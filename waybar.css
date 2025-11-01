@@ -1,5 +1,6 @@
 @define-color foreground #EAEAEA;
 @define-color background #1A1C1B;
+@define-color accent #D35F5F;
 
 * {
     background: transparent;
@@ -21,7 +22,7 @@
 #waybar {
     background-color: alpha(@background, 0.95);
     color: @foreground;
-    border: 0px solid alpha(@foreground, 0.50);
+    border: 0px solid alpha(@accent, 0.90);
     border-bottom-width: 2px;
 }
 
@@ -45,19 +46,20 @@ tooltip {
     padding: 0;
     margin: 0 5px;
     border-radius: 50%;
-    background-color: alpha(@foreground, 0.75);
+    background-color: alpha(@accent, 0.50);
     transition: all 0.15s ease-in-out;
 }
 
 #workspaces button.active,
 #workspaces button:hover {
-    background-color: @foreground;
+    background-color: @accent;
     border-radius: 20px;
     min-width: 25px;
     transition: all 0.15s ease-in-out;
 }
 #workspaces button.empty {
-    opacity: 0.45;
+    /* opacity: 0.35; */
+    background-color: alpha(@foreground, 0.50);
 }
 
 #workspaces button label {
@@ -78,6 +80,11 @@ tooltip {
 
 #custom-update {
   font-size: 10px;
+}
+
+#custom-omarchy,
+#custom-update {
+ color: @accent;
 }
 
 .hidden {
