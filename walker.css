@@ -34,19 +34,19 @@ scrollbar {
   border: 2px solid @border;
 }
 
-.preview-box {
-}
+.preview-box {}
 
-.box {
-}
+.box {}
 
 .search-container {
-  background: alpha(@base, 0.5);
-  border-radius: 14px;
-  padding: 10px;
-}
+  background: transparent;
+  border-radius: 8px;
+  border: 0px solid alpha(@selected-text, 0.90);
+  border-bottom-width: 2px;
+ }
 
 .input placeholder {
+  background: transparent;
   opacity: 0.5;
 }
 
@@ -59,27 +59,22 @@ scrollbar {
   outline: none;
 }
 
-.content-container {
-}
+.content-container {}
 
 .placeholder {
+  background: transparent;
 }
 
-.scroll {
-}
+.scroll {}
 
-.list {
-}
+.list {}
 
 child,
-child > * {
-}
+child>* {}
 
-child:hover .item-box {
-}
+child:hover .item-box {}
 
-child:selected .item-box {
-}
+child:selected .item-box {}
 
 child:selected .item-box * {
   color: @selected-text;
@@ -94,8 +89,7 @@ child:selected .item-box * {
   padding: 14px 0;
 }
 
-.item-text {
-}
+.item-text {}
 
 .item-subtext {
   font-size: 0px;
