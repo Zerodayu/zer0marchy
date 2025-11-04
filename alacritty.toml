@@ -22,7 +22,7 @@ dim_foreground = "#8a8a8d"
 
 [colors.cursor]
 text = "#121212"
-cursor = "#eaeaea"
+cursor = "#D35F5F"
 
 [colors.vi_mode_cursor]
 text = "#121212"
