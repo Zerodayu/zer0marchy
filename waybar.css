@@ -2,101 +2,61 @@
 @define-color background #1A1C1B;
 @define-color accent #D35F5F;
 
+/* ( disable the these on ".config/waybar/style.css"  to use the custom styles
+
+* 
+background-color
+color
+font-family
+
+) */
+
 * {
-    background: transparent;
-    border: none;
-    border-radius: 0;
-    min-height: 0;
-    font-size: 12px;
-    font-family: 'CaskaydiaMono Nerd Font';
-}
-
-.modules-left {
-    margin-left: 12px;
-}
-
-.modules-right {
-    margin-right: 6px;
+  font-family: 'CaskaydiaMono Nerd Font Propo';
 }
 
 #waybar {
-    background-color: alpha(@background, 0.95);
-    color: @foreground;
-    border: 0px solid alpha(@accent, 0.90);
-    border-bottom-width: 2px;
-}
-
-tooltip {
-    color: @foreground;
-    background: alpha(@background, 0.95);
-    border: 1px solid alpha(@foreground, 0.50);
-    border-radius: 8px;
+  background-color: alpha(@background, 0.75);
 }
 
 #workspaces {
-    background: transparent;
-    margin: 3px 0px;
-    padding: 6px;
-    border-radius: 26px;
+  background: transparent;
+  margin: 3px 0px;
+  padding: 10px 6px;
+  margin-left: -6px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 #workspaces button {
-    min-width: 8px;
-    min-height: 8px;
-    padding: 0;
-    margin: 0 5px;
-    border-radius: 50%;
-    background-color: alpha(@accent, 0.50);
-    transition: all 0.15s ease-in-out;
+  min-width: 8px;
+  min-height: 8px;
+  padding: 1;
+  margin: 0 6px;
+  border-radius: 26px;
+  background-color: alpha(@foreground, 0.75);
+  transition: all 0.15s ease-in-out;
 }
 
 #workspaces button.active,
 #workspaces button:hover {
-    background-color: @accent;
-    border-radius: 20px;
-    min-width: 25px;
-    transition: all 0.15s ease-in-out;
+  background-color: @accent;
+  min-width: 30px;
+  border-radius: 26px;
+  transition: all 0.15s ease-in-out;
 }
+
 #workspaces button.empty {
-    /* opacity: 0.35; */
-    background-color: alpha(@foreground, 0.50);
+  opacity: 0.45;
 }
+
 
 #workspaces button label {
-    font-size: 0px;
+  font-size: 0px;
 }
 
-#cpu,
-#tray,
-#bluetooth,
-#network,
-#battery,
-#pulseaudio,
-#custom-screenrecording-indicator,
-#custom-update {
-  min-width: 12px;
-  margin: 0 8px;
-}
-
-#custom-update {
-  font-size: 10px;
-}
-
-#custom-omarchy,
-#custom-update {
- color: @accent;
-}
-
-.hidden {
-  opacity: 0;
-}
-
-#custom-screenrecording-indicator {
-  min-width: 12px;
-  margin-left: 8.75px;
-  font-size: 10px;
-}
-
-#custom-screenrecording-indicator.active {
-  color: #a55555;
+#workspaces button {
+  font-size: 12.5px;
+  background: @foreground;
+  font-weight: 800;
 }
