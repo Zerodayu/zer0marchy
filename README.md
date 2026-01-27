@@ -1,17 +1,6 @@
 # Zero Omarchy Theme
 
-### Screenshots
+**Preview**
+![Preview](preview.png)
 
-> **Lock Screen**
-![Lock Screen](public/lockscreen.jpg)
-![Lock Screen](public/lockscreen-01.jpg)
-
-> **Homescreen**
-![Homescreen](public/homescreen.jpg)
-
-> **Omarchy Menu**
-![Omarchy Menu](public/menu.jpg)
-
-> **System Menu**
-![System Menu](public/system.jpg)
-
+> note: to use the waybar config read the comment on ``waybar.css`` file
