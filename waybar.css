@@ -16,25 +16,23 @@ font-family
 }
 
 #waybar {
-  background-color: alpha(@background, 0.75);
+  background-color: alpha(@background, 0.95);
 }
 
 #workspaces {
   background: transparent;
-  margin: 3px 0px;
   padding: 10px 6px;
-  margin-left: -6px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
 #workspaces button {
-  min-width: 8px;
-  min-height: 8px;
+  min-width: 6px;
+  min-height: 6px;
   padding: 1;
   margin: 0 6px;
   border-radius: 26px;
-  background-color: alpha(@foreground, 0.75);
+  background-color: alpha(@foreground, 0.70);
   transition: all 0.15s ease-in-out;
 }
 
@@ -47,16 +45,11 @@ font-family
 }
 
 #workspaces button.empty {
-  opacity: 0.45;
+  background-color: @foreground;
+  opacity: 0.25;
 }
 
 
 #workspaces button label {
   font-size: 0px;
-}
-
-#workspaces button {
-  font-size: 12.5px;
-  background: @foreground;
-  font-weight: 800;
 }
