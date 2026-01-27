@@ -1,6 +1,6 @@
-@define-color foreground #EAEAEA;
+@define-color foreground #ffffff;
 @define-color background #1A1C1B;
-@define-color accent #D35F5F;
+@define-color accent #b91c1c;
 
 /* ( disable the these on ".config/waybar/style.css"  to use the custom styles
 
@@ -32,7 +32,7 @@ font-family
   padding: 1;
   margin: 0 6px;
   border-radius: 26px;
-  background-color: alpha(@foreground, 0.70);
+  background-color: alpha(@accent, 0.30);
   transition: all 0.15s ease-in-out;
 }
 
@@ -46,7 +46,7 @@ font-family
 
 #workspaces button.empty {
   background-color: @foreground;
-  opacity: 0.25;
+  opacity: 0.50;
 }
 
 
