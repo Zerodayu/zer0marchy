@@ -32,7 +32,7 @@ font-family
   padding: 1;
   margin: 0 6px;
   border-radius: 26px;
-  background-color: alpha(@accent, 0.30);
+  background-color: alpha(@accent, 0.50);
   transition: all 0.15s ease-in-out;
 }
 
